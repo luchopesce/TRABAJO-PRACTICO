@@ -110,7 +110,20 @@ header{
     height: auto;
     max-width: 100%;
     vertical-align: middle;
+    animation-name: logo;
+    animation-duration: 3s;
     }
+
+    @keyframes logo{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+
 
 @media (min-width: 992px){
         .h__ban-logo-img {
