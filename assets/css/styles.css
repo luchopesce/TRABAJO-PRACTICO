@@ -112,7 +112,7 @@ header{
 }
 
 .h__ban-logo-img{
-    width: 60px;
+    width: 150px;
     display: inline-block;
     height: auto;
     max-width: 100%;
@@ -132,7 +132,7 @@ header{
 
 @media (min-width: 992px){
         .h__ban-logo-img {
-            width: 80px;
+            width: 200px;
         }
     }
 
