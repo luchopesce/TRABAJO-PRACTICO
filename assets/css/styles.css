@@ -28,6 +28,12 @@ body{
     background-color: #F4F4F4;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 .h__ban{
     background: #ffffff;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
@@ -35,6 +41,7 @@ body{
     flex-direction: column;
     height: 100%;
     align-items: flex-start;
+
 }
 
 @media (min-width:992px) {
@@ -69,6 +76,9 @@ body{
     background-color: #ffff;
     }
 
+.offcanvas{
+    --bs-offcanvas-width: 350px !important;
+}
 
 .h__ban-logo{
     align-items: center;
@@ -140,6 +150,18 @@ body{
 
 .btn-close{
     box-shadow: none !important;
+}
+
+.accordion{
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-active-color: none !important;
+    --bs-accordion-border-color: none !important;
+    --bs-accordion-body-padding-y: 0 !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image:var(--bs-accordion-btn-icon) !important;
 }
 
 .h__micarrito-logo{
@@ -239,18 +261,6 @@ body{
     margin: 0px;
     font-weight: 500;
 }
-
-.accordion{
-    --bs-accordion-active-bg: none !important;
-    --bs-accordion-btn-focus-box-shadow: none !important;
-    --bs-accordion-active-color: none !important;
-    --bs-accordion-border-color: none !important;
-}
-
-.accordion-button:not(.collapsed)::after{
-    background-image:var(--bs-accordion-btn-icon) !important;
-}
-
 
 @media (min-width:992px) {
     .h__navbar-list h4 {
