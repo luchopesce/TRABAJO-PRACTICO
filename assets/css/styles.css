@@ -80,6 +80,12 @@ header{
     --bs-offcanvas-width: 350px !important;
 }
 
+.offcanvas-header{
+    justify-content: center !important;
+    align-items: normal !important;
+}
+
+
 .h__ban-logo{
     align-items: center;
     display: flex;
@@ -89,7 +95,7 @@ header{
     padding-bottom: 6px;
     padding-top: 6px;
     position: relative;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -210,7 +216,7 @@ header{
 
 @media (min-width: 992px){
     .h__navbar-list {
-    margin-left: 150px !important;
+    margin-left: 100px !important;
     }
 }
 
