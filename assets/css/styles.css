@@ -25,17 +25,7 @@ html{
 }
 
 body{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto 120px;
-    grid-template-areas:"header header header header"
-                        "m__boddy m__boddy m__boddy m__boddy"
-                        "f__boddy f__boddy f__boddy f__boddy";
     background-color: #F4F4F4;
-}
-
-header{
-    grid-area: header;
 }
 
 .h__ban{
@@ -72,6 +62,13 @@ header{
         height: auto;
     }
 }
+
+.h__menu-opc-btn{
+    opacity: .5;
+    border: none ;
+    background-color: #ffff;
+    }
+
 
 .h__ban-logo{
     align-items: center;
@@ -111,7 +108,7 @@ header{
     max-width: 100%;
     vertical-align: middle;
     animation-name: logo;
-    animation-duration: 3s;
+    animation-duration: 2s;
     }
 
     @keyframes logo{
@@ -122,8 +119,6 @@ header{
             opacity: 1;
         }
     }
-
-
 
 @media (min-width: 992px){
         .h__ban-logo-img {
@@ -141,6 +136,10 @@ header{
     .h__menu-opc{
         display: flex;
     }
+}
+
+.btn-close{
+    box-shadow: none !important;
 }
 
 .h__micarrito-logo{
@@ -162,10 +161,11 @@ header{
     flex-direction: column;
     display: flex;
     height: 100%;
+    max-height: 80px;
     width: 100%;
 }
 
-@media (max-width:202px){
+@media (max-width:576px){
     .h__navbar{
         display: none;
     }
@@ -181,31 +181,41 @@ header{
     align-items: center;
     flex-direction: column;
     display: flex;
-    height: 100%;
-    width: 100%
-}
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    }
 
 @media (min-width: 992px){
     .h__navbar-list {
-    margin-left: 200px;
+    margin-left: 150px !important;
     }
 }
 
-@media (min-width: 576px){
+@media (max-width: 576px){
+    .h__navbar-list {
+        margin: 0px !important;
+        padding: 0px !important;
+        align-items: flex-start;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 577px){
     .h__navbar-list {
         flex-direction: row;
     }
 }
 
-@media (min-width:576px) and (max-width:992px) {
+@media (min-width:576px) and (max-width:991px) {
     .h__navbar-list {
-        margin-left: 50px;
+        margin-left: 5px;
+        padding: 0px;
     }
 }
 
 .h__navbar-list li{
-    position: relative;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,18 +227,46 @@ header{
     align-items: center;
     text-decoration: none;
     color: black;
-    height: 48px;   
-    font-family: 'Mada-Regular';
-    letter-spacing: 0.8px;
-    font-size: 11px;
+    height: 48px; 
+    width: 100%;
     padding: 0px 18px;
 }
 
-@media (min-width:576px) {
+.h__navbar-list h4{
+    font-family: 'Mada-Regular';
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.accordion{
+    --bs-accordion-active-bg: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-active-color: none !important;
+    --bs-accordion-border-color: none !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image:var(--bs-accordion-btn-icon) !important;
+}
+
+
+@media (min-width:992px) {
+    .h__navbar-list h4 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:992px) {
     .h__navbar-list li a {
-        font-size: 12px;
-        letter-spacing: 1px;
-        height: 52px;  
+        height: 64px; 
+    }
+}
+
+@media (min-width:576px) {
+    .h__navbar-list li{
+        width: auto;
     }
 }
 
@@ -238,8 +276,20 @@ header{
     color: #202124;
 }
 
+.dropdown-menu{
+    border-radius: 0 !important;
+    margin-top: 5px !important;
+}
+
+.dropdown-menu li{
+    height: 50px;
+}
+
+.dropdown-menu li a{
+    height: 45px;
+}
+
 .f__boddy{
-    grid-area: f__boddy;
     display: flex;
     background-color: #ffffff;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
