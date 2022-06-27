@@ -101,12 +101,6 @@ header{
     padding: 5px;
     }
 
- .h__menu-opc-btn button:hover{
-        background-color: #f8f9fa;
-        border-radius: 4px;
-        color: #202124;
-    }
-
 .offcanvas{
     --bs-offcanvas-width: 350px !important;
 }
@@ -911,9 +905,10 @@ header{
     position: relative;
     background: #ffffff;
     width: 100%;
-    padding: 50px;
+    padding: 30px;
     margin-top: 40px;
     border-radius: 20px;
+    justify-content: center;
 }
 
 
