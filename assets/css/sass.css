@@ -1,2 +1,14 @@
-boddy {
+body {
   color: #251a1a; }
+
+@font-face {
+  font-family: 'Mada-Light';
+  src: url(../fonts/Mada/Mada-Light.ttf); }
+
+@font-face {
+  font-family: 'Mada-Regular';
+  src: url(../fonts/Mada/Mada-Regular.ttf); }
+
+@font-face {
+  font-family: 'Mada-Black';
+  src: url(../fonts/Mada/Mada-Black.ttf); }
