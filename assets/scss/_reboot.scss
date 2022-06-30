@@ -1,3 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS */
 @font-face {
     font-family: 'Mada-Light';
     src: url(../fonts/Mada/Mada-Light.ttf);
@@ -12,3 +19,9 @@
     font-family: 'Mada-Black';
     src: url(../fonts/Mada/Mada-Black.ttf);
         }
+
+        body{
+            background-color:$background-color-general !important;
+        }
+
+

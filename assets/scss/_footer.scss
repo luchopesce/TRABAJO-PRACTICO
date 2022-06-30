@@ -1,0 +1,21 @@
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: $boxshadow-footer;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.f__boddy{
+    background-color:$background-color-general;
+    img{
+        width: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

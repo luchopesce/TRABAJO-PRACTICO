@@ -397,6 +397,7 @@ header{
     height: 45px;
 }
 
+
 .f__boddy{
     display: flex;
     background-color: #ffffff;
@@ -888,11 +889,7 @@ header{
     padding: 5px;
 }
 
-@media (min-width:576px) {
-    .m__celu-box-masdet h5{
-        font-size: 14px;
-    }
-}
+
 
 .m__celu-box-colors{
     padding: 5px;

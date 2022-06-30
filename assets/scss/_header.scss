@@ -1,0 +1,213 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.h__ban{
+    background: $colorwhite;
+    box-shadow: $boxshadow-banner;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+        @media (min-width:$width-tablet) {
+            flex-direction: row
+        }
+        @media (max-width:$width-minmobile){
+            align-items: center;
+        }
+}
+
+.h__ban-top{
+    align-items: center;
+    display: flex;
+    height: 80px;
+    min-height: 80px;
+    @media (max-width:$width-minmobile){
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.h__menu-opc{
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+    max-height: 80px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    position: relative;
+    width: 35px;
+    flex-direction: column;
+    justify-content: center;
+    display:flex;
+    @media (min-width:$width-mobile){
+        display:none;
+    }
+}
+
+.h__menu-opc-btn{
+    align-items: center;
+    max-height: 68px;
+    min-height: 68px;
+    display: flex;
+    width: auto;
+    opacity: .5;
+    border: none ;
+    background-color: $colorwhite;
+    padding: 5px;
+    }
+
+.offcanvas{
+        --bs-offcanvas-width: 350px !important;
+}
+    
+.offcanvas-header{
+        justify-content: center !important;
+        align-items: normal !important;
+}
+
+.h__ban-logo{
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin-left: 7px;
+        max-height: 80px;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        &:hover{
+            background-color: $ahover_backgcolor;
+            border-radius: $ahover_border;
+            color: $ahover_color;
+        }
+    }
+
+.h__ban-logo-link{
+        align-items: center;
+        display: flex;
+        background: #fff;
+        max-height: 68px;
+        min-height: 68px;
+        padding-left: 18px;
+        padding-right: 18px;
+        width: auto;
+    }
+
+.h__ban-logo-img{
+        width: 150px;
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+        animation-name: logo;
+        animation-duration: 2s;
+        @media (min-width:$width-tablet){
+        width: 200px;
+        }
+        @keyframes logo{
+        0%{
+            opacity: 0;
+            }
+        100%{
+            opacity: 1;
+            }
+        }
+        }
+
+    .accordion-button-none{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+        color: var(--bs-accordion-btn-color);
+        text-align: left;
+        background-color: var(--bs-accordion-btn-bg);
+        border: 0;
+        overflow-anchor: none;
+    }
+
+    .h__offcanvas-logo{
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin-left: 7px;
+        max-height: 70px;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        &:hover{
+            background-color: $ahover_backgcolor;
+            border-radius: $ahover_border;
+            color: $ahover_color;
+        }
+    }
+    
+    .h__offcanvas-link{
+        align-items: center;
+        display: flex;
+        background: $colorwhite;
+        max-height: 58px;
+        min-height: 58px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+    }
+
+    .h__offcanvas-logo img{
+        width: 68px;
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+        animation-name: logo;
+        animation-duration: 2s;
+    }
+
+    .btn-close{
+        box-shadow: none !important;
+    }
+    
+    .accordion{
+        --bs-accordion-active-bg: none !important;
+        --bs-accordion-btn-focus-box-shadow: none !important;
+        --bs-accordion-active-color: none !important;
+        --bs-accordion-border-color: none !important;
+        --bs-accordion-body-padding-y: 0 !important;
+    }
+    
+    .accordion-item a{
+        display: flex;
+        text-decoration: none !important;
+        width: 100%;
+    }
+    
+    .accordion-button:not(.collapsed)::after{
+        background-image:var(--bs-accordion-btn-icon) !important;
+    }
+    
+    .h__micarrito-logo{
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 86px;
+        padding: 10px;
+        @media (min-width:$width-tablet){
+                top: 10px;
+        }
+        @media (min-width:$width-mobile){
+                display: flex;
+        }
+    }
+
+    
+
+
