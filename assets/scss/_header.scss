@@ -12,7 +12,7 @@ header{
     height: 100%;
     align-items: flex-start;
         @media (min-width:$width-tablet) {
-            flex-direction: row
+            flex-direction: row;
         }
         @media (max-width:$width-minmobile){
             align-items: center;
@@ -80,11 +80,6 @@ header{
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        &:hover{
-            background-color: $ahover_backgcolor;
-            border-radius: $ahover_border;
-            color: $ahover_color;
-        }
     }
 
 .h__ban-logo-link{
@@ -96,14 +91,17 @@ header{
         padding-left: 18px;
         padding-right: 18px;
         width: auto;
+        &:hover{
+            background-color: $ahover_backgcolor;
+            border-radius: $ahover_border;
+            color: $ahover_color;
+        }
     }
 
 .h__ban-logo-img{
         width: 150px;
-        display: inline-block;
         height: auto;
         max-width: 100%;
-        vertical-align: middle;
         animation-name: logo;
         animation-duration: 2s;
         @media (min-width:$width-tablet){

@@ -7,10 +7,40 @@ $ahover_border: 4px;
 $ahover_color: #202124;
 $boxshadow-banner:  0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
 $boxshadow-footer: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-$boxshadow-box:0px 1px 1px rgba(0, 0, 0, 0.25);
+
 $width-minmobile: 202px;
 $width-mobile: 576px;
 $width-tablet: 992px;
 $width-pc: 1024px;
+
+$col-cant:12;
+
+$general-espacio: 1rem !default;
+$general-font: 'Mada';
+$general-weight: 500;
+
+/* H variables */
+$h1-font-size:                $general-espacio * 2 !default;
+$h2-font-size:                $general-espacio * 1.5 !default;
+$h3-font-size:                $general-espacio * 1.25 !default;
+$h4-font-size:                $general-espacio * 1 !default;
+$h5-font-size:                $general-espacio * 0.85 !default;
+$h6-font-size:                $general-espacio !default;
+
+/* BOX Widths */ 
+$box-width-cont: 170px;
+$box-radius-cont: 5px;
+$box-width-compu: 220px;
+$box-radius-compu: 2.5px;
+$box-width-celu: 200px;
+$box-radius-celu: 5px;
+$box-margin: 10px;
+$box-boxshadow :0px 1px 1px rgba(0, 0, 0, 0.25);
+$box-general:(
+    margin: $box-margin,
+    background-color: $colorwhite,
+    box-shadow: $box-boxshadow,
+);
+
 
 

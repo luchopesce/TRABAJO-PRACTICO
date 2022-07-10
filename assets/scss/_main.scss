@@ -1,3 +1,13 @@
+%box-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: map-get($box-general , margin);
+    background-color: map-get($box-general , background-color);
+    box-shadow: map-get($box-general , box-shadow);
+}
+
 .m__boddy{
     display: flex;
     flex-direction: column;
@@ -8,19 +18,13 @@
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 20px;
-    font-family: "Mada-Light" !important;
+    font-family: "Mada" !important;
     letter-spacing: 1px;
     border-bottom: 1px solid #D9D9D9;
-    h3,
-    h4{
-    margin-bottom: 0.2rem !important;
-    }
-    @media (min-width:$width-mobile) {
-        font-size: 14px !important;
-    }
 }
 
 .m__cont-frame{
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -28,18 +32,9 @@
 }
 
 .m__cont-box{
-    display: flex;
-    margin: 10px;
-    background-color:$colorwhite;
-    width: 120px;
-    box-shadow:$boxshadow-box;
-    border-radius: 4px;
-    flex-direction: column;
-    align-items: center;
-    @media (min-width:$width-mobile) {
-            width: 170px;
-            border-radius: 6px;
-    }
+    @extend %box-general;
+    width: $box-width-cont;
+    border-radius: $box-radius-cont;
 }
 
 .m__cont-box-img{
@@ -137,7 +132,7 @@
     margin: 10px;
     background-color:$colorwhite;
     width: 100px;
-    box-shadow:$boxshadow-box;
+    box-shadow:$box-boxshadow;
     border-radius: 4px;
     flex-direction: column;
     align-items: center;
@@ -161,26 +156,9 @@
 }
 
 .m__compu-box{
-    display: flex;
-    margin: 10px;
-    background-color:$colorwhite;
-    width: 190px;
-    box-shadow:$boxshadow-box;
-    border-radius: 2px;
-    flex-direction: column;
-    align-items: center;
-    h5{
-        margin: 0;
-        padding: 2px;
-        font-size: 12px;
-        @media (min-width:$width-mobile) {
-        font-size: 15px;
-        }
-    }
-    @media (min-width:$width-mobile) {
-            border-radius: 4px;
-            width: 230px;
-    }
+    @extend %box-general;
+    width: $box-width-compu;
+    border-radius: $box-radius-compu;
 }
 
 .m__compu-box-img{
@@ -245,7 +223,7 @@
     width: 100%;
     padding: 5px;
     justify-content: center;
-    font-family: 'Mada-Regular';
+    font-family: 'Mada';
 }
 
 .m__compu-box-prec-btc-precio{
@@ -288,18 +266,9 @@
 }
 
 .m__celu-box{
-    display: flex;
-    margin: 10px;
-    background-color:$colorwhite;
-    width: 170px;
-    box-shadow:$boxshadow-box;
-    border-radius: 3px;
-    flex-direction: column;
-    align-items: center;
-    @media (min-width:$width-mobile) {
-            border-radius: 5px;
-            width: 200px;
-    }
+    @extend %box-general;
+    width: $box-width-celu;
+    border-radius: $box-radius-celu;
 }
 
 .m__celu-box-img{
@@ -340,7 +309,7 @@
     width: 100%;
     padding: 5px;
     justify-content: center;
-    font-family: 'Mada-Regular';
+    font-family: 'Mada';
 }
 
 .m__celu-box-prec-btc-precio{
@@ -378,17 +347,6 @@
         @media (min-width:$width-mobile) {
                 font-size: 16px;
         }
-    }
-}
-
-.m__celu-box-masdet h5{
-    font-size: 12px;
-    padding: 5px;
-}
-
-@media (min-width:576px) {
-    .m__celu-box-masdet h5{
-        font-size: 14px;
     }
 }
 
@@ -432,5 +390,5 @@
     border-radius: 20px;
     justify-content: center;
     margin-bottom: 50px;
-    box-shadow:$boxshadow-box;
+    box-shadow:$box-boxshadow;
 }
