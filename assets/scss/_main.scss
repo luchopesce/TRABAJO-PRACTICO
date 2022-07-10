@@ -8,6 +8,13 @@
     box-shadow: map-get($box-general , box-shadow);
 }
 
+@mixin box ($width, $border-radius){
+    width: $width;
+    border-radius: $border-radius;
+    @extend %box-general;
+}
+
+
 .m__boddy{
     display: flex;
     flex-direction: column;
@@ -32,9 +39,7 @@
 }
 
 .m__cont-box{
-    @extend %box-general;
-    width: $box-width-cont;
-    border-radius: $box-radius-cont;
+    @include box($box-width-cont,$box-radius-cont);
 }
 
 .m__cont-box-img{
@@ -156,9 +161,7 @@
 }
 
 .m__compu-box{
-    @extend %box-general;
-    width: $box-width-compu;
-    border-radius: $box-radius-compu;
+    @include box($box-width-compu,$box-radius-compu);
 }
 
 .m__compu-box-img{
@@ -266,9 +269,7 @@
 }
 
 .m__celu-box{
-    @extend %box-general;
-    width: $box-width-celu;
-    border-radius: $box-radius-celu;
+    @include box($box-width-celu,$box-radius-celu);
 }
 
 .m__celu-box-img{
